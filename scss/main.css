@@ -1035,7 +1035,7 @@ header {
   transition: opacity 200ms ease-in-out;
 }
 .footer__widget__google {
-  border: 1px solid #FFD974;
+  /*border: 1px solid #FFD974;*/
   width: 370px;
   height: 120px;
 }
