@@ -1,0 +1,46 @@
+@use "./base/"as *;
+@use "./components/" as *;
+
+/* ---------- Global styling ---------- */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 1920px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+section {
+    @include section_padding;
+}
+
+/* ---------- Global classes ---------- */
+
+.noPaddingTop {
+    padding-top: 0;
+}
+
+.maxFourLines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.goldHover {
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        color: $gold;
+        transition: all 200ms ease-in-out;      
+    }
+}

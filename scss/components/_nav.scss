@@ -1,0 +1,145 @@
+@use '../base'as *;
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem 0;
+    z-index: 999;
+    background-color: rgba(41, 42, 38, 0);
+    transition: all 300ms ease-in-out;
+    
+    &__container {
+        @include container;
+        max-width: 1790px;
+    }
+
+    &__flexContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 225px;
+        height: 88px;
+
+        &__black {
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        &__white {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    }
+
+    &__rechts {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__language{
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: url(../assets/icons/down-arrow.png);
+            position: absolute;
+            right: -1.2rem;
+            bottom: 0.1rem;
+        }
+    }
+
+    &__dots {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            cursor: pointer;
+            
+            span:nth-child(1){
+                width: 18px;
+                height: 18px;
+                transition: all 300ms ease-in-out;
+            }
+
+            span:nth-child(3){
+                width: 10px;
+                height: 10px;
+                transition: all 300ms ease-in-out;
+            }
+        }
+
+        span {
+            width: 12px;
+            height: 12px;
+            background-color: $black;
+            border-radius: 50%;
+            transition: all 300ms ease-in-out;
+
+            &:nth-child(1){
+                width: 10px;
+                height: 10px;
+                transition: all 300ms ease-in-out;
+            }
+
+            &:nth-child(3){
+                width: 18px;
+                height: 18px;
+                transition: all 300ms ease-in-out;
+            }
+
+            
+        }
+    }
+}
+
+.navScrollChange {
+    background-color: rgba(41, 42, 38, 1);
+    color: $white;
+    transition: all 300ms ease-in-out;
+    height: 80px;
+
+    .nav__container {
+        height: 100%
+    }
+
+    .nav__flexContainer{
+        height: 100%;
+    }
+
+    .nav__logo {
+        width: 160px;
+        height: 65px;
+
+        &__black {
+            display: none;
+        }
+
+        &__white {
+            display: block;
+        }
+    }
+
+    .nav__dots {
+        span {
+            background-color: $white;
+            transition: all 300ms ease-in-out;
+        }
+    }
+
+    .nav__language::after {
+        content: url(../assets/icons/down-arrow-white.png);
+    }
+
+}

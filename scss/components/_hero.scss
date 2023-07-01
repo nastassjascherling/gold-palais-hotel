@@ -1,0 +1,154 @@
+@use '../base'as *;
+
+header {
+    position: relative;
+    height: 65vh;
+}
+
+.hero {
+
+    width: 100%;
+    height: 65vh;
+
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-size: cover;
+    background-position: center center;
+    
+    &__container {
+        @include container;
+    }
+
+    &__title {
+        @include herofont;
+        position: relative;
+
+        &::before {
+            content:"GOLD";
+            color: $gold;
+            opacity: 0.26;
+            @include inter-semibold;
+            font-size: 10.8rem;
+            line-height: 13rem;
+            z-index: -1;
+
+            position: absolute;
+            inset: 0;
+            top: -5rem;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    &__btn {
+        @include goldButton;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.fixedBtn {
+    @include goldButton;
+    &::after {
+        content: url(../assets/icons/right-arrow-fixed.png);
+        top: 36%;
+    }
+
+    &:hover {
+        &::after {
+            transform: translateX(1.8rem);
+        }
+    }
+
+    width: 145px;
+    height: 145px;
+
+    position: fixed;
+    transform: unset;
+    left: unset;
+    top: 40%;
+    right: 2vw;
+    z-index: 88888;
+
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+
+    a {
+        font-size: 0.9rem;
+        @include barlow-medium;
+    }
+}
+
+.btnShow {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+}
+
+@media (max-width: 1600px) {
+    .hero__btn {
+        width: 200px;
+        height: 200px;
+        top: -15vh;
+    }
+
+    .hero__btn:hover::after {
+        transform: translateX(3rem);
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero {
+
+        &__title::before {
+            font-size: 8rem;
+            line-height: 10rem;
+        }
+
+        p {
+            padding-top: 0.75rem;
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        &__btn {
+            width: 175px;
+            height: 175px;
+            top: -12vh;
+
+            &:hover::after {
+                transform: translateX(2.5rem);
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        &__title::before {
+            font-size: 6rem;
+            line-height: 10rem;
+        }
+    }
+
+    .fixedBtn {
+        height: 105px;
+        width: 105px;
+        top: unset;
+        bottom: 3vh;
+        right: 3vw;
+
+        a {
+            text-align: center;
+        }
+    }
+}

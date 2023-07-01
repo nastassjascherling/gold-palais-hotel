@@ -1,0 +1,202 @@
+@use 'variables'as *;
+
+//--------- MAIN: regular---------//                       
+
+@font-face {
+    src: url("../assets/fonts/Barlow-Regular.ttf");
+    font-family: "barlow-regular";
+    font-weight: 400;
+}
+
+@mixin barlow {
+    font-family: "barlow-regular";
+    font-weight: 400;
+}
+
+//--------- MAIN: medium ---------//
+
+@font-face {
+    src: url("../assets/fonts/Barlow-Medium.ttf");
+    font-family: "barlow-medium";
+    font-weight: 500;
+}
+
+@mixin barlow-medium {
+    font-family: "barlow-medium";
+    font-weight: 500;
+    font-style: normal;
+}
+
+//--------- MAIN: semibold ---------//
+
+@font-face {
+    src: url("../assets/fonts/Barlow-SemiBold.ttf");
+    font-family: "barlow-semibold";
+}
+
+@mixin barlow-semibold {
+    font-family: "barlow-semibold";
+    font-weight: 600;
+    font-style: normal;
+}
+
+//--------- SUB: regular---------//                       
+
+@font-face {
+    src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
+    font-family: "playfair-regular";
+}
+
+@mixin playfair-400 {
+    font-family: "playfair-regular";
+    font-weight: 400;
+    font-style: normal;
+}
+
+//--------- SUB2: semibold ---------//  
+
+@font-face {
+    src: url("../assets/fonts/Inter-SemiBold.ttf");
+    font-family: "inter-semibold";
+}
+
+@mixin inter-semibold {
+    font-family: "inter-semibold";
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ---------- Text ---------- */
+
+html {
+    font-family: "barlow-regular";
+    font-weight: 400;
+    color: $black;
+    font-size: 18px;
+    line-height: 24px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    font-size: 1.1rem;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
+
+}
+
+ul {
+    margin: 0;
+    padding-inline-start: 0;
+    
+    li {
+        list-style: none;
+    }
+}
+
+
+/* ---------- Headlines ---------- */
+
+@mixin herofont {
+    @include playfair-400;
+    text-align: center;
+
+    font-size: 7.9rem; //142px
+    line-height: 10.5rem; //190px
+
+    @media (max-width: 1600px) {
+        font-size: 6.4rem;
+        line-height: 9rem;
+    }
+
+    @media (max-width: 1350px) {
+        font-size: 5.4rem;
+        line-height: 8rem;
+    }
+    
+    @media (max-width: 1000px) {
+        font-size: 4.4rem;
+        line-height: 5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 3.9rem;
+        line-height: 4.5rem;
+    }
+} 
+
+h1 {
+    @include playfair-400;
+    text-align: center;
+
+    font-size: 5rem; //90px
+    line-height: 6.7rem; //120px
+
+    @media (max-width: 1000px) {
+        font-size: 4rem;
+        line-height: 5.7rem;
+    }
+}
+
+h2 {
+    @include playfair-400;
+
+    font-size: 2.7rem; //48px
+    line-height: 3.6rem; //64px
+    letter-spacing: 3px;
+    margin-bottom: 3.5rem;
+    
+    span {
+        @include barlow-medium;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0.3rem;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    font-weight: 600;
+
+    font-size: 1.3rem; //23px
+    line-height: 1.6rem; //28px
+
+    @media (max-width: 1000px) {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+}
+
+h4 {
+    font-weight: 600;
+
+    font-size: 1.25rem; //20px
+    line-height: 1.5rem; //24px
+
+    span {
+        display: block;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
