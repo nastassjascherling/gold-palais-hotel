@@ -16,6 +16,25 @@ function scrollFunction() {
   }
 }
 
+/*
+if(window.location.href == 'http://127.0.0.1:5500/index.html') {
+
+  alert('test');
+}
+*/
+
+/* Nav show & hide */
+
+$(".toggleMenu").click(function(){
+  $(".hiddenMenu").toggleClass("menu-show");
+  $(".hero__btn").toggleClass("hide");
+  $(".nav__rechts").toggleClass("change-color");
+  $("html").toggleClass("body-noScroll");
+  $(".nav__logo").toggleClass("whiteLogo");
+  $(".nav").toggleClass("hideBg");
+});
+
+
 /* Swiper */
 
 var swiper = new Swiper(".mySwiper", {
@@ -105,6 +124,67 @@ var swiper = new Swiper(".mySwiperV3", {
   },
 });
 
+var swiper = new Swiper(".mySwiperV4", {
+
+  slidesPerView: 2,
+  spaceBetween: 10,
+
+
+  keyboard: {
+    enabled: true,
+  },
+  
+  navigation: {
+    nextEl: ".swiper-button-nextV4",
+    prevEl: ".swiper-button-prevV4",
+  },
+
+  breakpoints: {
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+
+    850: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    
+    1250: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
+  },
+
+});
+
+var swiperTest = new Swiper(".mySwiperV5", { 
+  slidesPerView: 4,
+  spaceBetween: 15,
+  loop: true,
+
+  keyboard: {
+    enabled: true,
+  },
+
+    navigation: {
+    nextEl: ".swiper-button-nextV5",
+    prevEl: ".swiper-button-prevV5",
+  },
+
+  /*
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+    },
+    
+    1000: {
+      slidesPerView: 3,
+    },
+  },
+
+  */
+});
 
 /* Swiper ersten Link ansprechen*/
 

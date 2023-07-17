@@ -1,0 +1,171 @@
+@use '../base'as *;
+
+.sliderHorizontal {
+    position: relative;
+    background-color: #F9F9FB;
+    z-index: 2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 70%;
+        background-color: $black;
+        z-index: -1;
+    }
+
+    &__container {
+        @include container;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        color: $white;
+        @include goldUnderline;
+    }
+
+    &__slider {
+        margin-top: 4rem;
+    }
+
+    &__card {
+        max-width: 1000px;
+        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+
+        &__txt {
+            color: $black;
+            padding: 2rem 4rem 2rem 2rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 1.5rem;
+            text-align: start;
+
+            h4 {
+                span {
+                    display: block;
+                    font-weight: 400;
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            a {
+                @include goldLineLeftRight;
+                text-transform: uppercase;
+
+                z-index: 81;
+                padding-bottom: 0.75rem;
+            }
+        }
+
+        &__img {
+            height: 350px;
+            width: 150%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+                transition: all 300ms ease-in-out;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+        
+            .sliderHorizontal__card__img img {
+                transform: scale(1.05);
+            }   
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .sliderHorizontal {
+        &__card {
+            flex-direction: column-reverse;
+
+            &__img {
+                width: 100%;
+                height: 250px;
+            }
+
+            &__txt {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            a {
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+/* Swiperjs */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.swiper-wrapper {
+    margin-left: -14.5rem;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+@include swiperBtns;
+
+
+@media (max-width: 1500px) {
+    .swiper-wrapper {
+        margin-left: -14rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .swiper-wrapper {
+        margin-left: -13rem;
+    }
+}
+
+@media (max-width: 1350px) {
+    .swiper-wrapper {
+        margin-left: -12rem;
+    }
+}
+
+@media (max-width: 1250px) {
+    .swiper-wrapper {
+        margin-left: -11rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .swiper-wrapper {
+        margin-left: 0;
+    }
+}
