@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" width="75.76mm" height="30mm" viewBox="0 0 214.76 85.04">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #fff;
+        font-size: 19.62px;
+      }
+
+      .cls-1, .cls-4, .cls-5 {
+        font-family: MinionPro-Bold, 'Minion Pro';
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        fill: #d7c400;
+      }
+
+      .cls-2 {
+        letter-spacing: .07em;
+      }
+
+      .cls-2, .cls-3, .cls-6, .cls-7 {
+        font-family: MinionPro-Regular, 'Minion Pro';
+      }
+
+      .cls-3 {
+        letter-spacing: .07em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5, .cls-6 {
+        letter-spacing: .07em;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-8" points="97.45 56.71 98.44 85.04 100.92 56.73 97.45 56.71 97.45 56.71"/>
+  <polygon class="cls-8" points="76.7 56.73 72.77 74.86 79.48 56.73 76.7 56.73 76.7 56.73"/>
+  <polygon class="cls-8" points="90.24 56.73 90.12 83.52 93.53 56.73 90.24 56.73 90.24 56.73"/>
+  <polygon class="cls-8" points="83.4 56.73 82 80.55 86.34 56.73 83.4 56.73 83.4 56.73"/>
+  <polygon class="cls-8" points="70.25 56.73 66.44 65.31 72.77 56.73 70.25 56.73 70.25 56.73"/>
+  <polygon class="cls-8" points="108.19 56.71 107.21 85.04 104.72 56.73 108.19 56.71 108.19 56.71"/>
+  <polygon class="cls-8" points="128.94 56.73 132.88 74.86 126.16 56.73 128.94 56.73 128.94 56.73"/>
+  <polygon class="cls-8" points="115.4 56.73 115.53 83.52 112.11 56.73 115.4 56.73 115.4 56.73"/>
+  <polygon class="cls-8" points="122.24 56.73 123.65 80.55 119.3 56.73 122.24 56.73 122.24 56.73"/>
+  <polygon class="cls-8" points="135.4 56.73 139.2 65.31 132.88 56.73 135.4 56.73 135.4 56.73"/>
+  <polygon class="cls-8" points="97.45 28.32 98.44 0 100.92 28.31 97.45 28.32 97.45 28.32"/>
+  <polygon class="cls-8" points="76.7 28.31 72.76 10.18 79.48 28.31 76.7 28.31 76.7 28.31"/>
+  <polygon class="cls-8" points="90.24 28.31 90.12 1.52 93.53 28.31 90.24 28.31 90.24 28.31"/>
+  <polygon class="cls-8" points="83.4 28.31 82 4.49 86.34 28.31 83.4 28.31 83.4 28.31"/>
+  <polygon class="cls-8" points="70.25 28.31 66.44 19.73 72.77 28.31 70.25 28.31 70.25 28.31"/>
+  <polygon class="cls-8" points="108.19 28.32 107.21 0 104.72 28.31 108.19 28.32 108.19 28.32"/>
+  <polygon class="cls-8" points="128.94 28.31 132.88 10.18 126.16 28.31 128.94 28.31 128.94 28.31"/>
+  <polygon class="cls-8" points="115.4 28.31 115.53 1.52 112.11 28.31 115.4 28.31 115.4 28.31"/>
+  <polygon class="cls-8" points="122.24 28.31 123.65 4.49 119.3 28.31 122.24 28.31 122.24 28.31"/>
+  <polygon class="cls-8" points="135.4 28.31 139.2 19.73 132.88 28.31 135.4 28.31 135.4 28.31"/>
+  <text class="cls-2" transform="translate(0 47.42)"><tspan x="0" y="0">GOLD </tspan></text>
+  <text class="cls-4" transform="translate(64.8 47.42)"><tspan x="0" y="0">PA</tspan></text>
+  <text class="cls-1" transform="translate(91.01 47.42)"><tspan x="0" y="0">L</tspan></text>
+  <text class="cls-5" transform="translate(103.64 47.42)"><tspan x="0" y="0">AIS</tspan></text>
+  <text class="cls-6" transform="translate(138.93 47.42)"><tspan x="0" y="0" xml:space="preserve"> H</tspan></text>
+  <text class="cls-7" transform="translate(160.92 47.42)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-3" transform="translate(176.84 47.42)"><tspan x="0" y="0">TEL</tspan></text>
+</svg>

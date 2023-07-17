@@ -1,0 +1,44 @@
+@use 'variables'as *;
+@use 'typography'as *;
+@use 'mixins' as *;
+
+.noPaddingTop {
+    padding-top: 0;
+}
+  
+.maxFourLines {
+overflow: hidden;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+line-clamp: 4;
+-webkit-box-orient: vertical;
+}
+
+.maxSixLines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.uppercase {
+text-transform: uppercase;
+}
+
+.goldHover {
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+    color: $gold;
+    transition: all 200ms ease-in-out;
+    }
+}
+
+.body-noScroll {
+    overflow: hidden;
+}
+
+.marginBottom {
+    margin-bottom: 4rem;
+}

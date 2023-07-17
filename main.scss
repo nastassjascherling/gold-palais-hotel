@@ -1,0 +1,19 @@
+@use "./base/" as *;
+@use "./components/" as *;
+
+/* ---------- Global styling ---------- */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 1920px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+section {
+  @include section_padding;
+}

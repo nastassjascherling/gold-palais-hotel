@@ -1,0 +1,59 @@
+@use '../base'as *;
+
+.fullImgCard {
+    margin: 4rem 0;
+    background-size: cover;
+    background-position: center center;
+
+    padding-bottom: 0rem;
+    margin-bottom: 6rem;
+
+    &__container {
+        @include container;
+        position: relative;
+        height: 450px;
+    }
+
+    &__card {
+       @include txtTemplate;
+       color: $white;
+       padding: 2.5rem;
+
+       a {
+        color: white;
+        position: relative;
+       }
+
+       position: absolute;
+       left: 2rem;
+       bottom: -3rem;
+
+       &__txt {
+        width: 83%;
+        position: relative;
+       }
+
+       @include blurryBg;
+    }
+}
+
+@media (max-width: 1000px) {
+    .fullImgCard {
+        &__card {
+            right: 2rem;
+            &__txt {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .fullImgCard {
+        &__card {
+            right: 1rem;
+            left: 1rem;
+            padding: 1.5rem;
+        }
+    }
+}
