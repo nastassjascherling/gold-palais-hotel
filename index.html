@@ -10,24 +10,29 @@
     <title>Gold Palais Hotel</title>
 </head>
 <body>
-    <header>
+
+    <header class="header">
         <nav class="nav" id="nav">
             <div class="nav__container">
 
                 <div class="nav__flexContainer">
                     <a href="./index.html" class="nav__logo">
                         <img src="./assets/img/logo-small-black.png" alt="" class="nav__logo__black">
-                        <img src="./assets/img/logo-scroll.png" alt="" class="nav__logo__white">
+                        <img src="./assets/img/logo-scroll.svg" alt="" class="nav__logo__white">
                     </a>
 
                     <div class="nav__rechts">
-                        <div class="nav__language">
-                            DE
-                        </div>
-                        <div class="nav__dots">
+                        <ul class="nav__language">
+                            <li><a href="#">DE</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">IT</a></li>
+                        </ul>
+                        <div class="nav__dots toggleMenu">
                             <span></span>
                             <span></span>
                             <span></span>
+                            <div class="close">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -37,8 +42,9 @@
         <div class="hero" style="background-image: url(./assets/img/bg-feathers.png);">
 
             <div class="hero__container">
-                <h1 class="hero__title">
+                <h1 class="hero__title herofont">
                     Ihr Hotel in Berlin
+                    <span>Gold</span>
                 </h1>
                 <p class="uppercase">
                     Sie planen ihren Aufenthalt und überlassen uns die Details
@@ -52,6 +58,30 @@
 
         <div class="fixedBtn" id="fixedBtn">
             <a href="#" target="_blank" role="link">Jetzt buchen</a>
+        </div>
+
+        <div class="hiddenMenu">
+            <ul class="hiddenMenu__links">
+                <li><a href="./about.html">Unser Hotel</a></li>
+                <li class="sub-menu-parent">
+                    <a href="./zimmer.html">Zimmer & Preise</a>
+                    <ul class="sub-menu">
+                        <li><a href="./zimmer-details.html">Einzelzimmer</a></li>
+                        <li><a href="./zimmer-details.html">Doppelzimmer</a></li>
+                        <li><a href="./zimmer-details.html">Suite</a></li>
+                    </ul>
+                </li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="#">Berliner(er)</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+
+            <div class="hiddenMenu__btn">
+                <a href="#" target="_blank" role="link">Jetzt buchen</a>
+            </div>
+
+            <div class="darkBg toggleMenu"></div>
         </div>
     </header>
     
@@ -67,7 +97,6 @@
                     <img src="./assets/img/DZ superior 2.jpg" alt="">
                 </div>
 
-                
                 <div class="fourColImg__img">
                     <img src="./assets/img/IMG_DG Blick1.jpg" alt="">
                 </div>
@@ -77,6 +106,105 @@
                 </div>
 
             </div>
+        </section>
+
+        <section class="iconSlider">
+            <!--Slider buttons-->
+
+            <div class="swiper-button-next swiper-button-nextV4"></div>
+            <div class="swiper-button-prev swiper-button-prevV4"></div>
+
+            <!--Slider buttons end-->
+
+            <div class="iconSlider__container">
+                <div class="swiper mySwiperV4">
+                    <div class="swiper-wrapper">
+
+                    <!--Slider cards-->
+
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/No-smoking.png" alt="">
+                        </div>
+                        <h4>
+                            Nichtraucherhotel
+                        </h4>
+                        <p class="iconSlider__card__txt">
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/time-left.png" alt="">
+                        </div>
+                        <h4>
+                            Check-in
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/pawprint.png" alt="">
+                        </div>
+                        <h4>
+                            Hunde
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/wifi.png" alt="">
+                        </div>
+                        <h4>
+                            W-lan
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/dumbbell.png" alt="">
+                        </div>
+                        <h4>
+                            Fitnessraum
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/pawprint.png" alt="">
+                        </div>
+                        <h4>
+                            lorem
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+                      <div class="swiper-slide iconSlider__card">
+                        <div class="iconSlider__card__icon">
+                            <img src="./assets/icons/pawprint.png" alt="">
+                        </div>
+                        <h4>
+                            ipsum
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, sco sadipscing elitr
+                        </p>
+                      </div>
+
+                    </div>
+
+
+                </div>
+            </div> 
         </section>
 
         <section class="overlapCards">
@@ -93,7 +221,7 @@
                             </h2>
                         </div>
                         <p class="overlapCards__right__txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                        <a href="#">Unser Hotel</a>
+                        <a href="./about.html">Unser Hotel</a>
                     </div>
                 </div>
             </div>
@@ -115,7 +243,7 @@
                                 <div class="sliderHorizontal__card__txt">
                                     <h4><span>01</span>Einzelzimmer Balkon</h4>
                                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                    <a href="#">Mehr erfahren</a>
+                                    <a href="./zimmer-details.html">Mehr erfahren</a>
                                 </div>
                                 <div class="sliderHorizontal__card__img">
                                     <img src="./assets/img/DZ business 2.jpg" alt="">
@@ -128,7 +256,7 @@
                                 <div class="sliderHorizontal__card__txt">
                                     <h4><span>02</span>Einzelzimmer Balkon</h4>
                                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                    <a href="#">Mehr erfahren</a>
+                                    <a href="./zimmer-details.html">Mehr erfahren</a>
                                 </div>
                                 <div class="sliderHorizontal__card__img">
                                     <img src="./assets/img/DZ business 2.jpg" alt="">
@@ -141,7 +269,7 @@
                                 <div class="sliderHorizontal__card__txt">
                                     <h4><span>03</span>Einzelzimmer Balkon</h4>
                                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                    <a href="#">Mehr erfahren</a>
+                                    <a href="./zimmer-details.html">Mehr erfahren</a>
                                 </div>
                                 <div class="sliderHorizontal__card__img">
                                     <img src="./assets/img/DZ business 2.jpg" alt="">
@@ -154,7 +282,7 @@
                                 <div class="sliderHorizontal__card__txt">
                                     <h4><span>04</span>Einzelzimmer Balkon</h4>
                                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                    <a href="#">Mehr erfahren</a>
+                                    <a href="./zimmer-details.html">Mehr erfahren</a>
                                 </div>
                                 <div class="sliderHorizontal__card__img">
                                     <img src="./assets/img/DZ business 2.jpg" alt="">
@@ -184,7 +312,7 @@
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                     </p>
 
-                    <a href="# ">alles sehen</a>
+                    <a href="./news.html ">alles sehen</a>
 
                     <div class="swiper-button-next swiper-button-nextV2"></div>
                     <div class="swiper-button-prev swiper-button-prevV2"></div>
@@ -393,7 +521,7 @@
                 </a>
             </div>
         </section>
-
+ 
         <section class="txtImg">
             <div class="txtImg__container">
                 <div class="txtImg__txt">
@@ -430,7 +558,7 @@
         <section class="sliderBigImg">
             <div class="sliderBigImg__slider">
                 <div class="swiper mySwiperV3">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper biggerActive">
                       <div class="swiper-slide"><img src="./assets/img/Lounge.jpg" alt=""></div>
                       <div class="swiper-slide"><img src="./assets/img/Lounge (3).jpg" alt=""></div>
                       <div class="swiper-slide"><img src="./assets/img/person.png" alt=""></div>
@@ -454,7 +582,7 @@
             <div class="footer__left">
                 <div class="footer__left__left">
                     <a href="#" class="footer__logo">
-                        <img src="./assets/img/logo-small-white.png" alt="">
+                        <img src="./assets/img/logo-scroll.svg" alt="">
                     </a>
                     <div class="footer__left__contact">
                         <p>
@@ -488,7 +616,7 @@
             </div>
 
             <div class="footer__right">
-                <div class="footer__widget" style="opacity: 0;">
+                <div class="footer__widget">
                     <div class="footer__widget__google">
                          
                     </div>
@@ -520,7 +648,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
