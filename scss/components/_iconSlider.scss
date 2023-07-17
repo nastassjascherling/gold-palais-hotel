@@ -1,0 +1,110 @@
+@use '../base'as *;
+
+.iconSlider {
+    position: relative;
+   
+    &__container {
+        @include container;
+        padding: 0 5rem;
+        
+    }
+
+    .swiper-wrapper {
+        margin-left: unset;
+    } 
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .swiper-button-prevV4 {
+        position: absolute;
+        top: 45%;
+        left: 2vw;
+    }
+
+    .swiper-button-nextV4 {
+        position: absolute;
+        top: 45%;
+        left: 93vw;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.8rem;
+        position: relative;
+
+        &__icon {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__txt {
+            padding: 0 0.1rem;
+        }
+
+        &::before {
+            content:"";
+            position: absolute;
+            left: -1.3rem;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid $black;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .iconSlider {
+        &__card {
+            &::before {
+                left: -1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .iconSlider {
+        &__card {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .iconSlider {
+        &__container {
+            margin-bottom: 50px;
+        }
+
+        &__card {
+            padding: 0;
+        }
+
+        .swiper-button-prevV4 {
+            top: 85%;
+            left: 1rem;
+        }
+
+        .swiper-button-nextV4 {
+            top: 85%;
+            left: 5.5rem;
+        }
+    }
+}

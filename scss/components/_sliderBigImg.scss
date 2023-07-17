@@ -24,7 +24,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 590px;
+            height: 560px;
         }
       
         .swiper-slide img {
@@ -35,11 +35,11 @@
         }
 
         @media (min-width: 1000px) {
-            .swiper-slide-active {
+            .biggerActive .swiper-slide-active {
                 width: 50% !important;
             }
 
-            .swiper-slide-next {
+            .biggerActive .swiper-slide-next {
                 width: 26% !important;
             }
         }   
