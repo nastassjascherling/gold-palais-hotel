@@ -102,10 +102,15 @@ ul {
     }
 }
 
+strong {
+    @include barlow-semibold;
+    font-size: 1.1rem;
+}
 
 /* ---------- Headlines ---------- */
 
-@mixin herofont {
+
+.herofont {
     @include playfair-400;
     text-align: center;
 
@@ -131,7 +136,7 @@ ul {
         font-size: 3.9rem;
         line-height: 4.5rem;
     }
-} 
+}
 
 h1 {
     @include playfair-400;
@@ -140,9 +145,14 @@ h1 {
     font-size: 5rem; //90px
     line-height: 6.7rem; //120px
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
         font-size: 4rem;
         line-height: 5.7rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
     }
 }
 
